@@ -91,10 +91,15 @@ Esplora componenti e strategie della pipeline:
 ## 🛠️ Panoramica Pipeline
 
 🔹 **Crawl & Download** – Scarica articoli da ArXiv
+
 🔹 **Clean & Chunk** – Trasforma PDF in testo strutturato
+
 🔹 **Embed & Store** – Utilizza modelli di embedding (HuggingFace e FastEmbed) e salva in Qdrant
+
 🔹 **Retrieve & Generate** – LangChain + LangGraph per varianti RAG
+
 🔹 **Grade & Filter** – Usa valutatori di rilevanza per affinare il contesto
+
 🔹 **Monitoring** – Monitora la pipeline con LangSmith
 
 ---

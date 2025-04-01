@@ -91,10 +91,15 @@ Explore pipeline components and strategies:
 ## 🛠️ Pipeline Overview
 
 🔹 **Crawl & Download** – Pull papers from ArXiv
+
 🔹 **Clean & Chunk** – Convert PDFs into structured text
+
 🔹 **Embed & Store** – Use Embeddings models (HuggingFace and FastEmbed) and load in Qdrant
+
 🔹 **Retrieve & Generate** – LangChain + LangGraph for RAG variants
+
 🔹 **Grade & Filter** – Use relevance graders to refine context
+
 🔹 **Monitoring** – Use LangSmith to monitor the retrieval and generation pipeline
 
 ---
