@@ -3,7 +3,7 @@
 [![en](https://img.shields.io/badge/lang-en-red.svg)](./README.md)
 [![it](https://img.shields.io/badge/lang-it-blue.svg)](./README.it.md)
 
-Un’introduzione alla **Retrieval-Augmented Generation (RAG)** per articoli scientifici utilizzando **LangChain**, **Qdrant** e **ZenML**. Questo progetto dimostra come recuperare, preprocessare, incorporare e recuperare contenuti scientifici da **ArXiv**, fornendo una pipeline RAG semplificata con interfacce sia in notebook che web.
+Un’introduzione alla **Retrieval-Augmented Generation (RAG)** per articoli scientifici utilizzando **LangChain**, **Qdrant**, **ZenML**, e **LangSmith**. Questo progetto dimostra come recuperare, preprocessare, incorporare e recuperare contenuti scientifici da **ArXiv**, fornendo una pipeline RAG semplificata con interfacce sia in notebook che web.
 
 ---
 
@@ -15,6 +15,7 @@ Un’introduzione alla **Retrieval-Augmented Generation (RAG)** per articoli sci
 -   **🧠 Varianti RAG**: Supporta pipeline RAG **semplici**, **adattive** e **agentiche**.
 -   **🌐 Interfaccia Web**: Interagisci con la pipeline tramite un'app **Streamlit**.
 -   **🧪 Notebook**: Esplora e confronta strategie di recupero in notebook pronti all'uso.
+-   **🧑‍🔬 LangSmith**: Monitora la pipeline di recupero e generazione.
 
 ---
 

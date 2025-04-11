@@ -3,7 +3,7 @@
 [![en](https://img.shields.io/badge/lang-en-red.svg)](./README.md)
 [![it](https://img.shields.io/badge/lang-it-blue.svg)](./README.it.md)
 
-An **Introduction to Retrieval-Augmented Generation (RAG)** for scientific papers using **LangChain**, **Qdrant**, and **ZenML**. This project demonstrates how to fetch, preprocess, embed, and retrieve scientific content from **ArXiv**, providing a streamlined RAG pipeline with both notebook and web interfaces.
+An **Introduction to Retrieval-Augmented Generation (RAG)** for scientific papers using **LangChain**, **Qdrant**, **ZenML**, and **LangSmith**. This project demonstrates how to fetch, preprocess, embed, and retrieve scientific content from **ArXiv**, providing a streamlined RAG pipeline with both notebook and web interfaces.
 
 ---
 
@@ -15,6 +15,7 @@ An **Introduction to Retrieval-Augmented Generation (RAG)** for scientific paper
 -   **🧠 RAG Variants**: Supports **simple**, **adaptive**, and **agentic** retrieval-augmented generation pipelines.
 -   **🌐 Web UI**: Interact with the pipeline using a **Streamlit** app.
 -   **🧪 Notebooks**: Explore and compare retrieval strategies in ready-to-run notebooks.
+-   **🧑‍🔬 LangSmith**: Monitor the retrieval and generation pipeline.
 
 ---
 
