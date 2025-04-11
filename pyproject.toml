@@ -20,7 +20,7 @@ dependencies = [
     "langchain<1.0.0,>=0.3.19",
     "langchain-openai<1.0.0,>=0.3.6",
     "langchain-community<1.0.0,>=0.3.18",
-    "sentence-transformers<4.0.0,>=3.4.1",
+    "sentence-transformers>=3.4.1,<4.0.0",
     "pyarrow<20.0.0,>=19.0.01",
     "fastembed>=0.5.1,<1.0.0",
     "unstructured[all-docs]<1.0.0,>=0.16.23",
@@ -36,6 +36,7 @@ dependencies = [
     "plotly>=6.0.1",
     "langchain-ollama>=0.2.1",
     "python-dotenv>=1.0.1",
+    "accelerate>=1.6.0",
 ]
 
 [dependency-groups]
@@ -52,6 +53,9 @@ dev = [
 
 [tool.poe.tasks]
 
+zenml = "zenml login --local"
+qdrant = "docker compose up -d qdrant"
+start = { sequence = ["zenml", "qdrant"] }
 download-arxiv = "uv run python -m tools.run --no_cache --download_arxiv"
 load-to-qdrant = "uv run python -m tools.run --load_to_qdrant"
 end-to-end = "uv run python -m tools.run --download_arxiv --load_to_qdrant"

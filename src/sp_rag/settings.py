@@ -2,7 +2,7 @@ from pydantic_settings import BaseSettings
 
 
 class Settings(BaseSettings):
-    DENSE_EMBEDDING_MODEL: str = "sentence-transformers/all-MiniLM-L6-v2"
+    DENSE_EMBEDDING_MODEL: str = "sentence-transformers/all-mpnet-base-v2"
     SPARSE_EMBEDDING_MODEL: str = "Qdrant/bm25"
 
     CHUNK_SIZE: int = 512

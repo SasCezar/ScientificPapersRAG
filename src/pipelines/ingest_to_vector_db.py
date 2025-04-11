@@ -23,7 +23,7 @@ def ingest_to_vector_db(
     """
     docs = load_and_process_docs(files_path)
     chunked_docs = chunk_docs(
-        docs, chunk_size=settings.CHUNK_SIZE, chunk_overlp=settings.CHUNK_OVERLAP
+        docs, chunk_size=settings.CHUNK_SIZE, chunk_overlap=settings.CHUNK_OVERLAP
     )
     qdrant_load(chunked_docs, qdrant_url, qdrant_collection)
     return
