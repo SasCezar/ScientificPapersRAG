@@ -55,11 +55,18 @@ uv venv .venv        # Crea un ambiente virtuale
 uv sync              # Installa le dipendenze del progetto
 ```
 
-### 2️⃣ Avvia Qdrant (Database Vettoriale)
+### 2️⃣ Avvia Qdrant (Database Vettoriale) e ZenML
 
 ```bash
 docker-compose up -d qdrant
+zenml login --local
 ```
+oppure alternativamente, usa `poe`:
+
+```bash
+poe start
+```
+
 
 ### 3️⃣ Scarica Articoli da ArXiv
 

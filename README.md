@@ -55,10 +55,15 @@ uv venv .venv        # Create a virtual environment
 uv sync              # Install project dependencies
 ```
 
-### 2️⃣ Start Qdrant (Vector DB)
+### 2️⃣ Start Qdrant (Vector DB) and ZenML
 
 ```bash
 docker-compose up -d qdrant
+zenml login --local
+```
+or alternatively, use poe
+```bash
+poe start
 ```
 
 ### 3️⃣ Download ArXiv Papers
