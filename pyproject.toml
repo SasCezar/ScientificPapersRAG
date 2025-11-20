@@ -37,6 +37,7 @@ dependencies = [
     "langchain-ollama>=0.2.1",
     "python-dotenv>=1.0.1",
     "accelerate>=1.6.0",
+    "dotenv>=0.9.9",
 ]
 
 [dependency-groups]
@@ -57,6 +58,6 @@ zenml = "zenml login --local"
 qdrant = "docker compose up -d qdrant"
 start = { sequence = ["zenml", "qdrant"] }
 download-arxiv = "uv run python -m tools.run --no_cache --download_arxiv"
-load-to-qdrant = "uv run python -m tools.run --load_to_qdrant"
+load-to-qdrant = "uv run python -m tools.run --no_cache --load_to_qdrant"
 end-to-end = "uv run python -m tools.run --download_arxiv --load_to_qdrant"
 webapp = "uv run python -m tools.run --webapp"

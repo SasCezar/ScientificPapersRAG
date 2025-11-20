@@ -4,8 +4,11 @@ from pathlib import Path
 from typing import Any
 
 import click
+from dotenv import load_dotenv
 
 from src.pipelines import arxiv_paper_download, ingest_to_vector_db
+
+load_dotenv()
 
 
 @click.command()
